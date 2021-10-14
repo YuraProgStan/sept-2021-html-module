@@ -1,0 +1,24 @@
+h1 {
+    text-align: center
+}
+
+p {
+    font-size: 16px
+}
+
+.fun {
+    color: #235677
+}
+
+ul {
+    background-color: gainsboro
+}
+
+li {
+    list-style: none;
+    color: #a6913c
+}
+
+img {
+    border: 5px solid darkred
+}
