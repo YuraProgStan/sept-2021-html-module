@@ -135,7 +135,7 @@ li, a {
 
 .imageLeft {
     background: #a05f6e;
-    flex-basis: 48%;
+    flex-basis: 47%;
     height: auto;
     min-height: 200px;
 }
@@ -194,8 +194,8 @@ li, a {
         row-gap: 20px;
     }
 
-    .imagesTop {
-        flex-basis: 48%;
+    .imagesTop, .imageLeft {
+        flex-basis: 47%;
     }
 
     .columns {
@@ -209,13 +209,13 @@ li, a {
     }
 
     .imageRightWrapper {
-        width: 48%;
+        width: 47%;
     }
 
 
     .imageRight4 {
         height: 340px;
-        width: 48%;
+        width: 47%;
         justify-content: stretch;
     }
 
@@ -223,7 +223,12 @@ li, a {
 }
 
 @media screen and (max-width: 768px) {
-
+    .columnLeft{
+        flex-direction: column;
+    }
+    .imageLeft{
+        width:  100%;
+    }
     .columnRight {
         flex-direction: column;
         row-gap: 20px;
@@ -233,9 +238,6 @@ li, a {
         width: 100%;
     }
 
-    .imageLeft {
-        flex-basis: 100%;
-    }
 
     .imageRight {
         width: 100%;
