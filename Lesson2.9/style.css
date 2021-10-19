@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.wrap {
+    max-width: 1920px;
+    padding: 20px;
+    background: #ecedee;
+}
+
+.blockMain {
+    margin-bottom: 30px;
+    min-width: 250px;
+}
+
+.blockMain img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.blockVrez {
+    background: #faf5e3;
+    padding: 10px;
+    border-left: 2px solid #811607;
+    width: 250px;
+}
+
+.blockVrez li {
+    list-style: none;
+    color: #811607;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+img.circle {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px grey;
+}
