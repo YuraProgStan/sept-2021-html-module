@@ -1,0 +1,43 @@
+:root {
+    --main-color: #d9d9d9;
+    --border-color: #979797;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.bg-color {
+    background: var(--main-color);
+}
+
+header {
+    flex-grow:1;
+    height: 150px;
+}
+.main {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.main__article {
+    flex-grow: 3;
+}
+
+.main__aside {
+    flex-grow: 1;
+}
