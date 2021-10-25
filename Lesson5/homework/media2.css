@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .main {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+    .main__left {
+        background: var(--mn-left-color);
+        flex-grow: 2;
+    }
+}

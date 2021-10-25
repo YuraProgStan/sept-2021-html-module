@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    .main {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .main__article {
+        flex-grow: 3;
+    }
+
+    .main__aside {
+        flex-grow: 2;
+    }
+}

@@ -1,0 +1,25 @@
+:root {
+    --paging-color: #790921;
+    --paging-color-active: #093d79;
+}
+
+.paging {
+    display: flex;
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.paging a {
+    color: var(--paging-color);
+    text-decoration: none;
+}
+
+.paging a.paging__active {
+    color: var(--paging-color-active);
+}

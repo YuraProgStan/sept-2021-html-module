@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+
+    .main__left {
+        height: 200px;
+    }
+
+    .main__right {
+        flex-grow: 2;
+    }
+}

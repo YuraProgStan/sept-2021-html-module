@@ -1,15 +1,18 @@
+@media screen and (max-width: 1300px) {
+    .products__item {
+        flex-basis: 48%;
+    }
+}
+
 @media screen and (max-width: 992px) {
-   .header__main {
+    .header__main {
         padding: 30px 150px;
     }
-
     .products__list {
         flex-wrap: wrap;
         row-gap: 40px;
     }
-    .products__item {
-        flex-basis: 48%;
-    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -27,9 +30,11 @@
         background: var(--ft-color);
         position: absolute;
     }
-.soc-icons{
-    display: none;
-}
+
+    .soc-icons {
+        display: none;
+    }
+
     .gamburger__box__item::before {
         top: -12px;
     }
@@ -82,5 +87,4 @@
     .header__main {
         padding: 20px 20px;
     }
-
 }
