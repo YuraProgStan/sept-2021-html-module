@@ -1,0 +1,121 @@
+@media screen and (max-width: 991px) {
+    .navbar-custom {
+        padding-top: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .navbar-custom .container-fluid {
+        align-items: flex-start;
+        margin-top: 15px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .navbar-custom .navbar-collapse {
+        padding-top: 50px;
+        background: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 70vh;
+    }
+
+    .navbar-custom .navbar-brand img {
+        height: 27px;
+        width: 40px;
+    }
+
+    .navbar-nav {
+        row-gap: 20px;
+    }
+
+    .navbar-phone {
+        row-gap: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        line-height: 0 !important;
+    }
+
+    .nav-cart {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .nav-cart img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-custom .navbar-nav .nav-link, .navbar-custom .navbar-phone .bg-phone > p {
+        font-size: 18px;
+    }
+
+    .navbar-phone p:nth-of-type(1) {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .navbar-custom .navbar-toggler.custom-toggler {
+        border: 0 !important;
+    }
+
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='30' width='30'%3E%3Cline x1='5' y1='5' x2='25' y2='25' style='stroke:rgba(255,116,0,1);stroke-width:3;stroke-linecap:round' /%3E%3Cline x1='5' y1='25' x2='25' y2='5' style='stroke:rgba(255,116,0,1);stroke-width:3;stroke-linecap:round' /%3E%3C/svg%3E ");
+    }
+
+    .custom-toggler.collapsed .navbar-toggler-icon, .custom-toggler[aria-expanded="false"] .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 116, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* .custom-toggler.collapsed .navbar-toggler-icon {
+         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     }*/
+    /*.custom-toggler .navbar-toggler-icon {*/
+    /*    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png");*/
+    /*}*/
+    .header__title {
+        margin-top: 252px;
+    }
+
+    .header__title h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .header__title h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .header__title p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .header__title p::before,
+    .header__title p::after {
+        display: none;
+    }
+
+    .header__boxes {
+        flex-direction: column;
+        row-gap: 14px;
+        bottom: -755px;
+    }
+
+    .header__box__item {
+        width: 290px;
+        height: 276px;
+        padding: 20px 5px 10px;
+    }
+
+    .header__box__item p {
+        margin-top: 6px;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #656363;
+    }
+}

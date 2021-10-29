@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .fixed-top {
+            display: none;
+        }
+
+        .header {
+            background: #faf5e3;
+            height: 150px;
+            padding: 0;
+        }
+
+        .col {
+            height: 500px;
+        }
+
+        .main {
+            background: #235677;
+        }
+
+        .col_bg1 {
+            background: #235677;
+        }
+
+        .col_bg2 {
+            background: #a71e2d;
+        }
+
+        .col_bg3 {
+            background: rgba(253, 92, 99, 1);
+        }
+
+        @media screen and (max-width: 991px) {
+            .fixed-top {
+                /*display: block;*/
+            }
+
+            .navbar-custom .navbar-toggler.custom-toggler {
+                border: 0 !important;
+            }
+
+
+            .custom-toggler .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='30' width='30'%3E%3Cline x1='5' y1='5' x2='25' y2='25' style='stroke:rgba(0,0,0,1);stroke-width:3;stroke-linecap:round' /%3E%3Cline x1='5' y1='25' x2='25' y2='5' style='stroke:rgba(0,0,0,1);stroke-width:3;stroke-linecap:round' /%3E%3C/svg%3E ");
+            }
+
+            .custom-toggler.collapsed .navbar-toggler-icon, .custom-toggler[aria-expanded="false"] .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+
+            /* .custom-toggler.collapsed .navbar-toggler-icon {
+                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+             }*/
+            /*.custom-toggler .navbar-toggler-icon {*/
+            /*    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png");*/
+            /*}*/
+        }
+
+    </style>
+    <title>Bootstrap</title>
+</head>
+<body>
+<header class="header container">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main container">
+    <div class="row">
+        <div class="col col-3 col_bg1">
+            Column
+        </div>
+        <div class="col col-6 col_bg2">
+            Column
+        </div>
+        <div class="col col-3 col_bg3">
+            Column
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<script>
+    let hamburger = document.querySelector('.navbar-toggler');
+    let menu = document.querySelector('.navbar-collapse');
+    let mainMenu = document.querySelector('.container-fluid');
+    const toggleMenu = () => {
+        menu.classList.toggle("show");
+        hamburger.classList.toggle("collapsed");
+    }
+    hamburger.addEventListener('click', e => {
+        // e.stopPropagation();
+        // toggleMenu();
+    });
+    document.addEventListener('click', e => {
+        let target = e.target;
+        let its_menu = target === menu || menu.contains(target);
+        let its_mainMenu = target === mainMenu || mainMenu.contains(target);
+        let its_hamburger = target === hamburger;
+        let menu_is_active = menu.classList.contains('show');
+
+        if (!its_menu && !its_hamburger && !its_mainMenu && menu_is_active) {
+            menu.classList.toggle("show");
+            hamburger.classList.toggle("collapsed");
+        }
+    })
+</script>
+</body>
+</html>
