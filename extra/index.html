@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 100%;
+
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 900px;
+        }
+
+        .left_col, .center_col, .right_col {
+            background: #235677;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .center_col {
+            width: 600px;
+        }
+
+        .informer {
+            width: 600px;
+            background: #50c73d;
+            height: 400px;
+        }
+
+        .news {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .item {
+            background: #811607;
+            width: 300px;
+            height: 200px
+        }
+
+        .left_col {
+            height: 600px;
+        }
+
+        .socials {
+            width: 300px;
+            height: 300px;
+            background: #9fe2ff;
+        }
+
+        .banner1 {
+            width: 300px;
+            height: 600px;
+            background: #f8d138;
+        }
+
+        .banner2 {
+            width: 300px;
+            height: 250px;
+            background: #f8d138;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wrap">
+        <div class="left_col"></div>
+        <div class="center_col">
+            <div class="informer"></div>
+            <div class="news">
+                <div class='item'></div>
+                <div class='item'></div>
+                <div class='item'></div>
+                <div class='item'></div>
+            </div>
+        </div>
+        <div class="right_col">
+            <div class="banner1"></div>
+            <div class="socials"></div>
+            <div class="banner2"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
